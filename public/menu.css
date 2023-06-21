@@ -1,0 +1,34 @@
+/*COMIENZA CONTENEDOR*/
+.CONTENEDOR{
+    height: 130px;
+    /*border: 1px solid black;*/
+    margin-bottom: 5px;
+    display: flex;
+    position:sticky;
+    z-index: 100;
+    background-color: #D7DBDD;
+    width: 100%;
+    top: 0;
+}
+/*TERMINA CONTENEDOR*/
+
+.TITULO-MENU{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 30px;
+    color: #424949;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.MENU{
+    margin-top: 65px;
+    margin-left: 25px;
+}
+
+.MENU a{
+    text-decoration: none;
+    padding: 5px 5px;
+    color: #424242;
+    font-family: 'EB Garamond', serif;
+    font-size: 20px;
+}

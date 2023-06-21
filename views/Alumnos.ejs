@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acercas de</title>
+    <link rel="stylesheet" href="/menu.css">
+    <link rel="stylesheet" href="/alumnos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="PROYECTO">
+        <div class="CONTENEDOR">
+            <div class="TITULO-MENU"><b><p>PROYECTO</p></b></div>
+            <div class="MENU">
+                <a href="http://localhost:3000" class="MENUS">Inicio</a>
+                <a href="http://localhost:3000/infografias/web" class="MENUS">Infografías Web</a>
+                <a href="http://localhost:3000/videos/web" class="MENUS">Videos Web</a>
+                <a href="http://localhost:3000/infografias/cliente" class="MENUS">Infografías Cliente</a>
+                <a href="http://localhost:3000/videos/cliente" class="MENUS">Videos Cliente</a>
+                <a href="http://localhost:3000/infografias/servidor" class="MENUS">Infografías Servidor</a>
+                <a href="http://localhost:3000/videos/servidor" class="MENUS">Videos Servidor</a>
+                <a href="http://localhost:3000/videos/nuevo" class="MENUS">Agregar Videos</a>
+                <a href="http://localhost:3000/alumnos/4d" class="MENUS">Acerca de</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="titulo">Generacion 2021-2024</div>
+    <div class="Sub-titulo">4°D Febrero - Julio 2023</div>
+    <div class="Contenido">
+        <div class="Tarjeta-Personal">
+            <%datos.forEach(x=>{%>
+                <div class="contenido-tarjeta">
+                    <div class="Fotos"><img src="<%=x.Foto%>"></div>
+                    <div class="Datos">
+                        <div class="nombre">"<%=x.Nombre%>"</div>
+                        <div class="descripcion"><%=x.Texto%></div>
+                    </div>
+                </div>
+            <%});%>
+        </div>
+    </div>
+    
+    
+    <a href="https://www.youtube.com/channel/UCrFnggLgFqnAIkgZWRW4--w">
+        <p class="Link">
+            Canal Youtube:  https://www.youtube.com/@Somos4D
+        </p>
+    </a><br>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.CONTENEDOR{
+  height: 150px;
+  /*border: 1px solid black;*/
+  margin-bottom: 5px;
+  display: flex;
+  position:sticky;
+  z-index: 100;
+  background-color: #D7DBDD;
+  width: 99.82%;
+  top: 0;
+}
+/*TERMINA CONTENEDOR*/
+
+.TITULO-MENU{
+  font-family: 'Libre Baskerville', serif;
+  font-size: 30px;
+  color: #424949;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+.MENU{
+  margin-top: 65px;
+  margin-left: 25px;
+}
+
+.MENU a{
+  text-decoration: none;
+  padding: 5px 5px;
+  color: #424242;
+  font-family: 'EB Garamond', serif;
+  font-size: 20px;
+}
+
+
+body{
+background-color: #b9b9b9;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    column-gap: 40px;
+    row-gap: 40px;
+    width:97%;
+    margin: 0 auto;
+    margin-left: 1.5%;
+}
+.h{
+    margin-top: 10%;
+    background-color:black;
+    box-shadow: 5px 5px 8px rgb(231, 229, 229);
+    color:white;
+    font-size: 18.5px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+    color: hsla(0, 0%, 0%, .9);
+    font: normal 50px Varela Round, sans-serif;
+    height: 100px;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    animation: move linear 2000ms infinite;  
+    padding-top: 10px;
+  }
+  
+  @keyframes move {
+    0% {
+      text-shadow:
+        4px -4px 0 rgb(228, 222, 222), 
+        3px -3px 0 rgb(228, 222, 222),
+        2px -2px 0 rgb(228, 222, 222),
+        1px -1px 0 rgb(228, 222, 222),
+        -4px 4px 0 hsla(180, 100%, 50%, 1), 
+        -3px 3px 0 hsla(180, 100%, 50%, 1), 
+        -2px 2px 0 hsla(180, 100%, 50%, 1), 
+        -1px 1px 0 hsla(180, 100%, 50%, 1)
+      ;
+    }
+    25% {    
+      text-shadow:      
+        -4px -4px 0 hsla(180, 100%, 50%, 1), 
+        -3px -3px 0 hsla(180, 100%, 50%, 1), 
+        -2px -2px 0 hsla(180, 100%, 50%, 1), 
+        -1px -1px 0 hsla(180, 100%, 50%, 1),
+        4px 4px 0 rgb(228, 222, 222),
+        3px 3px 0 rgb(228, 222, 222), 
+        2px 2px 0 rgb(228, 222, 222),
+        1px 1px 0 rgb(228, 222, 222),    
+      ;
+    }
+  
+    
+    100% {
+      text-shadow:
+        4px -4px 0 rgb(228, 222, 222),
+        3px -3px 0 rgb(228, 222, 222),
+        2px -2px 0 rgb(228, 222, 222),
+        1px -1px 0 rgb(228, 222, 222), 
+        -4px 4px 0 hsla(180, 100%, 50%, 1), 
+        -3px 3px 0 hsla(180, 100%, 50%, 1), 
+        -2px 2px 0 hsla(180, 100%, 50%, 1), 
+        -1px 1px 0 hsla(180, 100%, 50%, 1)
+      ;
+    }  
+  }
+

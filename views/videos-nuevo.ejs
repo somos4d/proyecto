@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="/agregar-video.css">
+    <link rel="stylesheet" href="/menu.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+
+
+    <title>Document</title>
+</head>
+<body>    
+     <div class="PROYECTO">
+        <div class="CONTENEDOR">
+            <div class="TITULO-MENU"><b><p>PROYECTO</p></b></div>
+            <div class="MENU">
+                <a href="http://localhost:3000" class="MENUS">Inicio</a>
+                <a href="http://localhost:3000/infografias/web" class="MENUS">Infografías Web</a>
+                <a href="http://localhost:3000/videos/web" class="MENUS">Videos Web</a>
+                <a href="http://localhost:3000/infografias/cliente" class="MENUS">Infografías Cliente</a>
+                <a href="http://localhost:3000/videos/cliente" class="MENUS">Videos Cliente</a>
+                <a href="http://localhost:3000/infografias/servidor" class="MENUS">Infografías Servidor</a>
+                <a href="http://localhost:3000/videos/servidor" class="MENUS">Videos Servidor</a>
+                <a href="http://localhost:3000/videos/nuevo" class="MENUS">Agregar Videos</a>
+                <a href="http://localhost:3000/alumnos/4d" class="MENUS">Acerca de</a>
+            </div>
+        </div>
+    </div>
+
+    <h1>Agregar video</h1>
+
+    <table class="table2">
+
+        
+        <tbody>
+            <tr>
+                <td class="p"><b>Materia</b></td>
+            <td>
+                <select id="materia">
+                    <option>Paginas Web</option>
+                    <option>Aplicaciones Cliente</option>
+                    <option>Aplicaciones Servidor</option>
+                </select>
+            </td>
+            </tr>
+            <tr>
+                <td class="p"><b>Url del Video</b></td>
+                <td>
+                    <input class="pp" type="text" id="url"  value="" colspan="2">
+                    <input class="boton-abajo" id="btnVideo" type="button" value="Actualizar">
+                </td>
+                
+            </tr>
+            <tr>
+                <td></td>
+                <td><iframe class="video" id="video" width="560" height="315" src="" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe></td>
+            </tr>
+            <tr>
+                <td class="p"><b>Tema</b></td>
+                <td>
+                    <input class="url" type="text" id="tema"  value="" />
+                </td>
+            </tr>
+            <tr>
+                <td class="p"><b>Alumno</b></td>
+                <td><input class="descripcion" type="text" id="alumno"  value="" /></td>
+            </tr>
+            
+            
+            <tr>
+                <td colspan="2"><input class="boton-abajo" id="btnActualizar" type="button" value="Guardar"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="errores" id="mensajeError"></div>
+    <script src="/videos-nuevo.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/menu.css">
+    <link rel="stylesheet" href="/infografias.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+
+    <title>Infografias Cliente 4D</title>
+</head>
+<body>
+
+    <div class="PROYECTO">
+        <div class="CONTENEDOR">
+            <div class="TITULO-MENU"><b><p>PROYECTO</p></b></div>
+            <div class="MENU">
+                <a href="http://localhost:3000" class="MENUS">Inicio</a>
+                <a href="http://localhost:3000/infografias/web" class="MENUS">Infografías Web</a>
+                <a href="http://localhost:3000/videos/web" class="MENUS">Videos Web</a>
+                <a href="http://localhost:3000/infografias/cliente" class="MENUS">Infografías Cliente</a>
+                <a href="http://localhost:3000/videos/cliente" class="MENUS">Videos Cliente</a>
+                <a href="http://localhost:3000/infografias/servidor" class="MENUS">Infografías Servidor</a>
+                <a href="http://localhost:3000/videos/servidor" class="MENUS">Videos Servidor</a>
+                <a href="http://localhost:3000/videos/nuevo" class="MENUS">Agregar Videos</a>
+                <a href="http://localhost:3000/alumnos/4d" class="MENUS">Acerca de</a>
+            </div>
+        </div>
+    </div><br>
+
+    <h1 class="TituloInfos"> Infografías de Cliente </h1><br>
+
+    <div class="grid-contenedor">
+        <%datos.forEach(x=>{%>
+        <div class="grid-item">
+            <div class="temaInf"> <%=x.Tema%> </div>
+            <div class="imagenInf"> <img src="/<%=x.Imagen%>">  </div>
+            <div class="Epacing"> &nbsp; </div>
+            <div class="nombreInf"> <%=x.NombreDelAlumno%> </div>
+        </div>
+        <%})%>
+    </div>
+    
+</body>
+</html>

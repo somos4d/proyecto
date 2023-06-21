@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/estilos1.css">
+<title>Videos Web</title>
+<script src="https://kit.fontawesome.com/9097cf9775.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/videos.css"/>
+<link rel="stylesheet" href="/menu.css">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="PROYECTO">
+        <div class="CONTENEDOR">
+            <div class="TITULO-MENU"><b><p>PROYECTO</p></b></div>
+            <div class="MENU">
+                <a href="http://localhost:3000" class="MENUS">Inicio</a>
+                <a href="http://localhost:3000/infografias/web" class="MENUS">Infografías Web</a>
+                <a href="http://localhost:3000/videos/web" class="MENUS">Videos Web</a>
+                <a href="http://localhost:3000/infografias/cliente" class="MENUS">Infografías Cliente</a>
+                <a href="http://localhost:3000/videos/cliente" class="MENUS">Videos Cliente</a>
+                <a href="http://localhost:3000/infografias/servidor" class="MENUS">Infografías Servidor</a>
+                <a href="http://localhost:3000/videos/servidor" class="MENUS">Videos Servidor</a>
+                <a href="http://localhost:3000/videos/nuevo" class="MENUS">Agregar Videos</a>
+                <a href="http://localhost:3000/alumnos/4d" class="MENUS">Acerca de</a>
+            </div>
+        </div>
+    </div>
+    <h1>Conceptos de Páginas Web</h1>
+    <div class="grid">
+        <%datos.forEach(x=>{%>
+            <div class="h">
+               <iframe width="300" height="200" src="<%=x.Url%>" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                    <div class="info">
+                        <div><b>Tema:</b><%=x.Tema%></div>
+                        <div><b>Nombre del Alumno:</b><%=x.Alumno%></div>
+                        <button onclick="eliminar('<%=x._id%>')"> <i class="fa-sharp fa-solid fa-trash"></i> Eliminar</button>
+                    </div>
+                </div>
+            <%})%>
+        </div>
+        <script src="/listado-web.js"></script>
+    </div>
+</body>
+</html>

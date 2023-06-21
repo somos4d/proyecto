@@ -1,0 +1,99 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background-color: #e6e6e6;
+}
+.titulo{
+    font-size: 35px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color:white;
+    background-color:#306cb9;
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px; 
+}
+.Sub-titulo{
+    font-size: 20px;
+    font-family:'Poppins', sans-serif;
+    font-weight: bold;
+    color:#306cb9;
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px; 
+    letter-spacing: 3px;
+}
+
+.contenido-tarjeta{
+    display:flex;
+    margin-top: 20px;
+    background-color: white;
+    border-bottom: 1px solid #ebebeb;
+    width: 1200px;
+    height: 300px ;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.contenido-tarjeta:hover{
+    box-shadow: 10px 10px 20px   5px  rgb(213, 213, 213);
+    transition: all 0.3s ease-in-out;
+}
+  
+.Fotos img{
+    width: 220px ;
+    height: 200px ;
+}
+.Fotos{
+    margin-top: 25px;
+    margin-left:15px ;
+}
+.Datos{
+    margin-top: 25px;
+    margin-left:15px ;
+    width: 920px;
+}
+.nombre{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color:#306cb9;
+}
+.descripcion{
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+}
+.Link{
+    margin-top: 25px;
+    margin-left: 20px;
+    text-align: center;
+    background-color: #5b84b9;
+    width: 300px;
+    height: 40px ;
+    font-size: 18px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+
+}
+.Link:hover{
+    box-shadow: 10px 10px 20px   5px  rgb(213, 213, 213);
+    transition: all 0.3s ease-in-out;
+}
+a{
+ text-decoration: none;
+ color:white;
+}
+.Menu{
+    margin-top: 25px;
+    margin-left: 20px;
+    text-align: center;
+    background-color: #5b84b9;
+    width: 300px;
+    height: 40px ;
+    font-size: 18px;
+    color:white;
+}

@@ -1,0 +1,39 @@
+body{
+    background-color:aliceblue;
+    padding: 1%;
+}
+
+.center{
+    text-align: center;
+}
+
+.centerr{
+    text-align: center;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.centerrr{
+    text-align: center;
+    font-size: 20px;
+}
+
+.imagen{
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: auto;
+    border: solid black 2px;
+}
+
+.boton{
+    display: block;
+    margin:  auto;
+    width: 130px;
+    height: 30px;
+}
+
+.deco{
+    text-decoration: none;
+}
